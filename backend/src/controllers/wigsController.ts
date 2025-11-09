@@ -10,7 +10,7 @@ export const getAllWigs = async (req: Request, res: Response) => {
     }
 };
 
-export const getWg = async (req: Request, res: Response) => {
+export const getWig = async (req: Request, res: Response) => {
     try {
         const wig = await Wigs.findById(req.params.id);
         if (!wig) {
